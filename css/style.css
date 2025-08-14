@@ -79,6 +79,64 @@ nav a {
     line-height: 1.5;
 }
 
+/*card-section*/
+.card-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap; 
+}
+
+.card {
+    background: var(--primary-color); /* Soft pink background */
+    border-radius: 12px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensures image covers the area */
+    
+    
+}
+
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(144, 53, 248, 0.4); /* Purple glow */
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--secondary-color); /* Purple text */
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Responsive */
+}
+
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
